@@ -1,0 +1,25 @@
+generated: '2026-07-18'
+method: searched
+source: https://daily-harvest.com/.well-known/openid-configuration
+note: >-
+  Derived from the live OIDC discovery document served on the provider host.
+  This is the Shopify Customer Account API authorization surface for
+  account.daily-harvest.com — Daily Harvest publishes no first-party developer
+  API. Captured for completeness of the provider's public auth surface.
+summary:
+  types: [openIdConnect, oauth2]
+  oauth2_flows: [authorizationCode]
+  grant_types: [authorization_code, refresh_token, 'urn:ietf:params:oauth:grant-type:jwt-bearer']
+  pkce: [S256]
+  id_token_signing: [RS256]
+schemes:
+- name: shopify-customer-account-oidc
+  type: openIdConnect
+  issuer: https://shopify.com/authentication/73275670826
+  authorizationUrl: https://account.daily-harvest.com/authentication/oauth/authorize
+  tokenUrl: https://account.daily-harvest.com/authentication/oauth/token
+  endSessionUrl: https://account.daily-harvest.com/authentication/logout
+  jwksUri: https://account.daily-harvest.com/authentication/.well-known/jwks.json
+  responseTypes: [code]
+  tokenEndpointAuthMethods: [client_secret_basic]
+  sources: [well-known/daily-harvest-openid-configuration.json]
