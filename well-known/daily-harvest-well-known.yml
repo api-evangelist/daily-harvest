@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://daily-harvest.com/.well-known/
+host: https://daily-harvest.com
+note: >-
+  daily-harvest.com is a Shopify storefront. The two 200 documents below are the
+  Shopify Customer Account API OIDC/OAuth2 discovery documents served on the
+  provider host; the customer-account authorization server lives at
+  account.daily-harvest.com (issuer https://shopify.com/authentication/73275670826).
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: daily-harvest-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: daily-harvest-oauth-authorization-server.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404

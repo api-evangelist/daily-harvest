@@ -1,8 +1,27 @@
 aid: daily-harvest
 name: Daily Harvest
-description: Daily Harvest is a company surfaced as a portfolio company of lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Daily Harvest is a direct-to-consumer health food delivery company. It sells
+  organic, ready-to-prepare frozen foods — smoothies, oat bowls, elixirs,
+  protein, and boosters — that customers order on daily-harvest.com (a Shopify
+  storefront) and receive shipped frozen to their door, with no subscription
+  required. Daily Harvest is a portfolio company of Lightspeed Venture Partners.
+  It publishes no first-party developer API; its only public programmatic
+  surface is the Shopify Customer Account API OIDC/OAuth2 authorization layer
+  exposed at account.daily-harvest.com.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://daily-harvest.com/cdn/shop/files/DH_logo.jpg?v=1760391224
 url: https://raw.githubusercontent.com/api-evangelist/daily-harvest/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +31,45 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Food & Beverage
+- Direct-to-Consumer
+- E-commerce
+- Food Delivery
+- Health & Wellness
+- Subscription
+- Shopify
 apis: []
+common:
+- type: DomainSecurity
+  url: security/daily-harvest-domain-security.yml
+- type: Website
+  url: https://daily-harvest.com/
+- type: Support
+  url: https://daily-harvest.com/blogs/faq
+- type: Blog
+  url: https://daily-harvest.com/blogs/all
+- type: TermsOfService
+  url: https://daily-harvest.com/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://daily-harvest.com/policies/privacy-policy
+- type: Login
+  url: https://account.daily-harvest.com/
+- type: WellKnown
+  url: well-known/daily-harvest-well-known.yml
+- type: Authentication
+  url: authentication/daily-harvest-authentication.yml
+- type: OAuthScopes
+  url: scopes/daily-harvest-scopes.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
