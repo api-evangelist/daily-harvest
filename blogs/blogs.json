@@ -3,19 +3,13 @@
   "feeds": [
     {
       "source": "https://daily-harvest.com/blogs/faq.atom",
-      "feed_url": "https://daily-harvest.com/blogs/faq.atom",
-      "title": "",
-      "saved": 0,
-      "method": "feed"
+      "error": "HTTPError"
     },
     {
       "source": "https://daily-harvest.com/blogs/faq",
-      "feed_url": "https://daily-harvest.com/blogs/faq.atom",
-      "title": "",
-      "saved": 0,
-      "method": "discovered"
+      "error": "HTTPError"
     }
   ],
   "post_count": 33,
-  "fetched": "2026-08-01T15:49:00Z"
+  "fetched": "2026-08-06T14:08:46Z"
 }
