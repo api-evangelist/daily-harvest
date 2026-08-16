@@ -2,14 +2,13 @@
   "repo": "daily-harvest",
   "feeds": [
     {
-      "source": "https://daily-harvest.com/blogs/faq.atom",
-      "error": "HTTPError"
-    },
-    {
       "source": "https://daily-harvest.com/blogs/faq",
-      "error": "HTTPError"
+      "feed_url": "https://daily-harvest.com/blogs/faq.atom",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
     }
   ],
   "post_count": 33,
-  "fetched": "2026-08-06T14:08:46Z"
+  "fetched": "2026-08-15T12:22:01Z"
 }
