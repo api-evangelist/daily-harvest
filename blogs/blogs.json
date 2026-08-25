@@ -2,6 +2,13 @@
   "repo": "daily-harvest",
   "feeds": [
     {
+      "source": "https://daily-harvest.com/blogs/faq.atom",
+      "feed_url": "https://daily-harvest.com/blogs/faq.atom",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://daily-harvest.com/blogs/faq",
       "feed_url": "https://daily-harvest.com/blogs/faq.atom",
       "title": "",
@@ -10,5 +17,5 @@
     }
   ],
   "post_count": 33,
-  "fetched": "2026-08-15T12:22:01Z"
+  "fetched": "2026-08-22T20:20:02Z"
 }
