@@ -9,6 +9,17 @@ description: >-
   It publishes no first-party developer API; its only public programmatic
   surface is the Shopify Customer Account API OIDC/OAuth2 authorization layer
   exposed at account.daily-harvest.com.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
