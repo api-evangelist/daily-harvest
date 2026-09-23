@@ -2,21 +2,26 @@ generated: '2026-07-18'
 method: searched
 source: https://daily-harvest.com/.well-known/
 host: https://daily-harvest.com
-note: >-
-  daily-harvest.com is a Shopify storefront. The two 200 documents below are the
-  Shopify Customer Account API OIDC/OAuth2 discovery documents served on the
-  provider host; the customer-account authorization server lives at
-  account.daily-harvest.com (issuer https://shopify.com/authentication/73275670826).
-documents:
-- path: /.well-known/openid-configuration
-  status: 200
-  file: daily-harvest-openid-configuration.json
-- path: /.well-known/oauth-authorization-server
-  status: 200
-  file: daily-harvest-oauth-authorization-server.json
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
+note: daily-harvest.com is a Shopify storefront. The two 200 documents below are the Shopify Customer
+  Account API OIDC/OAuth2 discovery documents served on the provider host; the customer-account authorization
+  server lives at account.daily-harvest.com (issuer https://shopify.com/authentication/73275670826).
+hosts:
+- host: https://daily-harvest.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: daily-harvest-openid-configuration.json
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: daily-harvest-oauth-authorization-server.json
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
